@@ -47,19 +47,24 @@ To install and use **openai-doc-assistans**, follow the steps below:
 
 5. **Continuous Improvement**: As more content is processed and refined, the system continuously enhances its understanding and outputs, providing more accurate and context-aware results with each iteration.
 
-## Usage
+### Syntax
 
-1. **Processing Documents**:
-   Run the main script to start processing all files in the specified folder:
-   ```bash
-   python main.py --folder path_to_your_folder
-   ```
+```bash
+poetry run python src/main.py <source_dir> <instructions_file> <dest_dir> [--generate_files]
+```
 
-2. **Querying Processed Knowledge**:
-   Once the documents have been processed and refined, you can query the knowledge base:
-   ```bash
-   python openai_client.py query "your question here"
-   ```
+- `<source_dir>`: The path to the directory containing the original markdown files.
+- `<instructions_file>`: The path to the file that contains the instructions for processing the markdown files.
+- `<dest_dir>`: The path to the directory where the processed and generated files will be copied.
+- `--generate_files`: (Optional) Include this option to generate additional files such as `mkdocs.yml` and `index.md`.
+
+### Example
+
+Let's assume you have a `docs/` directory containing your markdown files, an instructions file called `instructions.txt`, and you want the processed files to be copied to an `output/` directory:
+
+```bash
+poetry run python src/main.py docs/ instructions.txt output/ --generate_files
+```
 
 ## Project Structure
 
