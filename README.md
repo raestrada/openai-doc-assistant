@@ -14,23 +14,20 @@
 
 ## Installation
 
-To install and use **openai-doc-assistans**, follow the steps below:
+1. Install `Poetry` if you haven’t done so already. You can follow [the official Poetry installation instructions](https://python-poetry.org/docs/#installation).
 
-1. **Clone the Repository**:
+2. Clone this repository or download the files.
+
+3. Install the required dependencies by running:
+
    ```bash
-   git clone git@github.com:YOUR_GITHUB_USERNAME/openai-doc-assistans.git
+   poetry install
    ```
 
-2. **Install Dependencies**:
-   Install the necessary packages using `pip`:
-   ```bash
-   pip install -r requirements.txt
-   ```
+4. Set up your OpenAI API key as an environment variable. Create a `.env` file at the root of the project and add the following:
 
-3. **Configure Environment Variables**:
-   Set up your OpenAI API key in a `.env` file:
-   ```plaintext
-   OPENAI_API_KEY=your_openai_api_key_here
+   ```bash
+   OPENAI_API_KEY=your_openai_api_key
    ```
 
 ## How It Works
@@ -46,6 +43,10 @@ To install and use **openai-doc-assistans**, follow the steps below:
 4. **Retrieval and Refinement**: After the first pass, the generated knowledge is reprocessed through a retrieval system. This allows **openai-doc-assistans** to refine previous outputs based on the growing body of knowledge from the folder, effectively improving the content while staying within token limits.
 
 5. **Continuous Improvement**: As more content is processed and refined, the system continuously enhances its understanding and outputs, providing more accurate and context-aware results with each iteration.
+
+## Usage
+
+This script processes markdown files in a directory and can generate a `mkdocs.yml` file and an `index.md`. The processed and generated files will be copied to a destination directory.
 
 ### Syntax
 
