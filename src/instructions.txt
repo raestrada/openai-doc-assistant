@@ -1,0 +1,19 @@
+### Instructions Example:
+
+**Task**: You are asked to update the file using all your knowledge of **openai-agent v2**. You must retain at least all the existing content and enhance it with relevant context from the information you have about **openai-agent v2**. Make sure to maintain all links to images as they are.
+
+1. **Content Retention**: Ensure that none of the existing content is removed. The goal is to improve upon the document, not replace it.
+
+2. **Contextual Improvement**: Add new sections or details where necessary to reflect the updates in **openai-agent v2**. These may include improvements in architecture, security, cloud components, or any recent developments in the platform.
+
+3. **Document Structure**: Keep the current structure of the document, ensuring clarity and consistency in your updates. You can add subsections or rephrase sentences to provide better explanations while ensuring the overall flow remains logical.
+
+4. **Knowledge Inclusion**: Use your understanding of **openai-agent v2** to integrate details about the new version, such as:
+   - Enhanced GitOps practices for deployment management.
+   - Improved CI/CD pipelines using managed services like Harness.
+   - Security improvements, including private package registries, signed artifacts, and continuous testing.
+   - New components, such as the transition to a Backstage-based developer portal and the adoption of ArgoCD for multi-cluster Kubernetes management.
+
+5. **Maintain Links**: All image links and other media links in the document must remain intact. You can add new images or references if necessary, but do not break any existing links.
+
+6. **Final Review**: After completing the update, ensure the document still serves its original purpose while now providing updated and improved information based on **openai-agent v2**.

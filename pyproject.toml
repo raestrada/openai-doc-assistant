@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "seki-docs-assistant"
+version = "0.1.0"
+description = "A tool for processing markdown files with OpenAI and generating mkdocs.yml for Backstage Tech Docs."
+authors = ["Tu Nombre <tu_email@example.com>"]
+license = "MIT"
+packages = [{include = "*", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^1.42.0"
+python-dotenv = "^1.0.0"
+
+colorama = "^0.4.6"
+ipdb = "^0.13.13"
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+black = "^23.0"
+isort = "^5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+seki-docs-assistant = "main:main"
