@@ -1,8 +1,8 @@
-# openai-doc-assistans
+# openai-doc-assistant
 
 ## Introduction
 
-**openai-doc-assistans** is a tool designed to iteratively refine and process all the documents in a folder by using the knowledge contained within those documents. It utilizes the OpenAI API, employing behaviors and instructions to ensure the most accurate and contextual retrieval of information. This is particularly useful when dealing with token limitations in OpenAI models, allowing the system to progressively improve its outputs as more knowledge is processed and refined through retrieval.
+**openai-doc-assistant** is a tool designed to iteratively refine and process all the documents in a folder by using the knowledge contained within those documents. It utilizes the OpenAI API, employing behaviors and instructions to ensure the most accurate and contextual retrieval of information. This is particularly useful when dealing with token limitations in OpenAI models, allowing the system to progressively improve its outputs as more knowledge is processed and refined through retrieval.
 
 ## Key Features
 
@@ -32,7 +32,7 @@
 
 ## How It Works
 
-**openai-doc-assistans** operates by iterating over all the files in a specified folder, processing the content using OpenAI’s language models while considering the entire folder's knowledge to improve results. Here's the process:
+**openai-doc-assistant** operates by iterating over all the files in a specified folder, processing the content using OpenAI’s language models while considering the entire folder's knowledge to improve results. Here's the process:
 
 1. **Initial Document Ingestion**: All files in the specified folder are loaded and prepared for processing. The tool identifies each file’s content to understand the knowledge base it will work with.
 
@@ -40,7 +40,7 @@
 
 3. **First Pass Processing**: The system processes each document using OpenAI’s API, taking into account the token limits. Initial knowledge is generated and saved.
 
-4. **Retrieval and Refinement**: After the first pass, the generated knowledge is reprocessed through a retrieval system. This allows **openai-doc-assistans** to refine previous outputs based on the growing body of knowledge from the folder, effectively improving the content while staying within token limits.
+4. **Retrieval and Refinement**: After the first pass, the generated knowledge is reprocessed through a retrieval system. This allows **openai-doc-assistant** to refine previous outputs based on the growing body of knowledge from the folder, effectively improving the content while staying within token limits.
 
 5. **Continuous Improvement**: As more content is processed and refined, the system continuously enhances its understanding and outputs, providing more accurate and context-aware results with each iteration.
 
